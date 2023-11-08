@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Overview() {
   const initialArray = [65, 76, 61, 69, 99, 56, 73, 105, 30, 104];
