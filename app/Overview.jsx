@@ -93,7 +93,7 @@ export default function Overview() {
           <span className="flex items-center justify-center gap-2 my-4">
             <button
               onClick={handleBubbleSort}
-              className="ring-1 ring-indigo-950 shadow-inner shadow-indigo-500 rounded-2xl drop-shadow-2xl p-2 active:scale-90 scale-1 transition duration-300 ease-in-out"
+              className="ring-1 ring-indigo-950 shadow-inner shadow-indigo-500 rounded-2xl drop-shadow-2xl p-2 active:scale-90 scale-1 transition duration-200 ease-in-out"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ export default function Overview() {
           {bars.map((bar) => (
             <div
               key={bar.id}
-              className={`${bar.bgColor} lg:w-20 ring-4 ring-indigo-950 rounded-2xl drop-shadow-2xl text-slate-300 text-2xl font-semibold tracking-tight text-center p-4`}
+              className={`${bar.bgColor} lg:w-20 ring-4 ring-indigo-950 rounded-2xl drop-shadow-2xl text-slate-300 text-2xl font-semibold tracking-tight text-center p-4 transition duration-300 ease-in-out`}
               style={{
                 height: `${bar.value * 2}px`,
               }}
